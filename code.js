@@ -7,9 +7,13 @@ function helloWorld() {
 //     return "let's hope this works";
 // }
 
-function sayHello(){
+function sayHello(input){
 
-    return "";
+    if(input === "Alex") {
+        return "Hello, Alex!";
+    }else{
+        return "Hello, Jane!";
+    }
 }
 
 
