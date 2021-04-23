@@ -7,10 +7,11 @@ function helloWorld() {
 //     return "let's hope this works";
 // }
 
-function sayHello(name){
-    return "Hello, " + name;
+function sayHello(){
+
+    return "";
 }
 
-sayHello("Amado");
+
 
 
