@@ -17,9 +17,21 @@ function sayHello(input){
     //     return "Hello, Jane!";
     // }
 
+    if (input === undefined){
+        return "Hello, World!";
+    }
+
+    if(input === true){
+        return "Hello, World!";
+    }
+
+    if(input === false){
+        return "Hello, World!";
+    }
     return "Hello, " + input + "!";
 
 }
+
 
 //continue from exercise #6 
 
