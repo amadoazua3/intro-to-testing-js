@@ -105,5 +105,31 @@ describe('isVowel', function (){
     });
 });
 
+describe('add', function (){
+    it('should be a defined function', function (){
+        expect(typeof add).toBe('function');
+    });
+    it('should return 5 when add(2, 3) is passed', function (){
+        expect(add(2, 3)).toBe(5);
+    });
+    it('should return -12 when add(-3, -9) is passed', function (){
+        expect(add(-3, -9)).toBe(-12);
+    });
+    it('should return 11 when add("5", 6) is passed', function (){
+        expect(add("5", 6)).toBe(11);
+    });
+    it('should return 6 when add("-4", "10") is passed', function (){
+        expect(add("-4", "10")).toBe(6);
+    });
+    it('should return NaN when add("banana", "split") is passed', function (){
+        expect(add("banana", "split")).toBeNaN();
+    });
+    it('should return NaN when add(2, "apples") is passed', function (){
+        expect(add(2, "apples")).toBeNaN();
+    });
+    it('should return NaN when add() is called', function (){
+        expect(add()).toBeNaN();
+    });
+});
 
 
