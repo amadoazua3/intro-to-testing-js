@@ -17,6 +17,8 @@ function sayHello(input){
     //     return "Hello, Jane!";
     // }
 
+    //refactored code
+
     if (input === undefined){
         return "Hello, World!";
     }
@@ -46,21 +48,47 @@ function isFive(input){
 function isEven(input){
 
     if(input === true || input === false){
-        console.log("I am here");
         return false;
     }
     if(input % 2 === 0){
-        console.log("you shouldn't be here");
         return true;
     }
     if(input % 2 !== 0){
-        console.log("hmm so weird its rather odd");
         return false;
     }
     if(typeof input === "undefined") {
-        console.log("hello");
         return false;
     }
 }
 
+function isVowel(input){
+
+    //refactored code to get all green lights no matter the input
+
+    if(input == 'a' || input == 'e' || input == 'i' || input == 'o' || input == 'u'){
+        return true;
+    } else if(input == 'A' || input == 'E' || input == 'I' || input == 'O' || input == 'U'){
+        return true;
+    }else{
+        return false;
+    }
+
+    // Step by Step testing to have everything green following TDD
+    // if(input === 'a'){
+    //     return true;
+    // }
+    // if(input === 'A'){
+    //     return true;
+    // }
+    // if(input === 'y'){
+    //     return false;
+    // }
+    // if(typeof input !== 'string'){
+    //     return false;
+    // }
+    // if(input.length > 1){
+    //     return false
+    // }
+
+}
 
