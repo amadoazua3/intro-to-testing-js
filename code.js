@@ -32,9 +32,6 @@ function sayHello(input){
 
 }
 
-
-//continue from exercise #6 
-
 function isFive(input){
 
     if(input === "5"){
@@ -48,20 +45,10 @@ function isFive(input){
 
 function isEven(input){
 
-
-    if(typeof input === "undefined") {
-        console.log("hello");
-        return false;
-    }
-    // if(input !== "undefined"){
-    //     console.log("YOU DEFINITELY SHOULDN'T BE HERE=");
-    //     return Boolean;
-    // }
     if(input === true || input === false){
         console.log("I am here");
         return false;
     }
-
     if(input % 2 === 0){
         console.log("you shouldn't be here");
         return true;
@@ -70,6 +57,10 @@ function isEven(input){
         console.log("hmm so weird its rather odd");
         return false;
     }
-
+    if(typeof input === "undefined") {
+        console.log("hello");
+        return false;
+    }
 }
+
 

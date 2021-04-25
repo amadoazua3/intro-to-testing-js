@@ -52,9 +52,6 @@ describe('isEven', function (){
    it('should be a defined function', function (){
       expect(typeof isEven).toBe('function');
    });
-   it('should return a boolean no matter the input', function (){
-      expect(isEven()).toBe(Boolean);
-   });
    it('should return true when passed 2', function (){
       expect(isEven(2)).toBe(true);
    });
